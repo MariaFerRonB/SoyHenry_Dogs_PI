@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Roboto:wght@700;900&display=swap');
+
+.welcomeMessage{
+    margin-top: 300px;
+    margin-right: 500px;
+    margin-left: 550px;
+    color: #616060;
+    width:450px
+}
+.welcoming{
+font-size: 80px;
+width: 450px;
+
+
+font-family: 'Lilita One', cursive;
+}
+
+.enterButton{
+    font-family: 'Lilita One', cursive;
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #8075FF;
+    border:none;
+    transition: all 0.3s ease-in-out;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    margin-left:-10px
+}
+
+.enterButton:hover{
+    background-color: #6320EE;
+}
+
+.perrito{
+    width:650px;
+    margin-top: -520px;
+    margin-left: 750px;
+    border-radius:400px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+ 
+}
+    

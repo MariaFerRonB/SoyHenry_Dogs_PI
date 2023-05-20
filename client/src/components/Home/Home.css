@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap');
+
+.rectangle{
+    background-color: #8075FF;
+    height: 160px;
+    margin-top: 0px;
+   
+
+}
+
+
+.logo{
+    color: white;
+    margin-right: 900px;
+    margin-top:-110px;
+    margin-left: 250px;
+    font-size: 50px;
+    font-family: 'Lilita One', cursive;
+    width:300px
+}
+
+.paw{
+    height: 50px;
+     margin-left: -575px;
+    margin-top: -89px;
+    position: absolute;
+    align-items: left;
+   
+
+}
+
+.card-home{
+    
+    filter: saturate(80%);
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(99, 32, 238, .3);
+    width: 450px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: -60px;
+    margin-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    transition: filter 0.5s ease-in-out;
+    flex-direction: row;
+    font-family: 'Lilita One', cursive;
+    text-decoration: none;
+}
+
+.dogsButton{
+    background-color: #757575;
+    position: absolute;
+    align-items: center;
+    margin-top:60px;
+    margin-left:-120px;
+    padding: 10px 40px 10px 35px;
+    border-radius:10px;
+    font-family: 'Lilita One', cursive;
+    font-size:13px;
+    color: white;
+    border:none;
+    transition: filter 0.5s ease-in-out;
+}
+
+.dogsButton:hover{
+    cursor: pointer;
+    background-color: #616060;
+    transform: scale(1.06);
+
+
+}
+
+.filterText{
+    
+    width: 130px;
+    display: inline-block;
+    font-family: 'Lilita One', cursive;
+    margin-top: -230px;
+    margin-left: auto;
+    color: #616060;
+    font-size: 25;
+ 
+    margin-right:-40px
+    
+  
+}
+
+.filters{
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+
+
+.selectMenus{
+
+    margin-top: -230px;
+    padding-right: 40px;
+    height:25px;
+    font-family: 'Lilita One', cursive;
+    padding-left: 20px;
+
+
+}
+
+.selectMenus select {
+    
+    font: 14px 'Lilita One', cursive;
+    color: #616060;
+    font-weight: bold;
+    background-color: #8075FF solid;
+    border: none;
+    
+  }
+
+  select:active{
+    background-color: #8075FF;
+
+
+   
+}
+
+.selectMenus select option {
+   margin-top: 100px
+  }
+
+  .doggie{ 
+    display: flex;
+    justify-content: flex-end;
+    transition: filter 0.3s ease-in-out;
+    max-width: 115px;
+    max-height: 100%;
+    margin-left:auto;
+    margin-right:265px;
+    margin-top:-120px
+  }
+
+  .createDog{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right:245px;
+    margin-top: -10px;
+    font-family: 'Lilita One', cursive;
+    color:white;
+
+  }
+
+  .doggie:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .arrow {
+    transform: scale(.16) rotate(20deg);
+    transform-origin: top left;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: -400px;
+    margin-top: -114px;
+  }
+
+  .navLink{
+    text-decoration: none;
+  }
+
+  .allCards{
+    margin-top: -100px;
+  }
+

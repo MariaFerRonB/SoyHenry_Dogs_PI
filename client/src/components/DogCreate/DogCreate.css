@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap');
+
+.paw2{
+    height: 50px;
+   margin-top: -89px;
+   margin-left: 545px;
+   display: flex;
+   justify-content: flex-end;
+
+}
+
+.createTitle{
+margin-top: 50px;
+font-family: 'Lilita One', cursive;
+font-size:40px;
+color:#616060
+}
+
+label{
+    font-size: 20px;
+    font-family: 'Lilita One', cursive;
+    color:#616060;
+    display:flex;
+    justify-content: center;
+    margin-top:10px
+}
+
+input{
+    width:400px;
+    height: 20px;
+    color:#616060;
+    font-family: 'Lilita One', cursive;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow:0 1.5px 1.5px rgba(0, 0, 0, 0.3);
+    border:none;
+    margin-top: 5px;
+    
+   
+  }
+
+
+
+ .errors{
+    margin-left: 100px;
+    display:inline-block;
+ }
+
+     
+  .error {
+    color: red;
+    font-style: italic;
+    font-size: 12px;
+    font-family: 'Lilita One', cursive;
+   
+   
+    
+  }
+
+  .temperamentOption{
+    width:400px;
+    height:25px;
+    border-radius: 100px;
+   font: 14px 'Lilita One', cursive;
+    color: #616060;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    margin-top: 5px;
+  }
+
+  .submitCreate{
+    background-color: #757575;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    padding: 15px 60px 15px 60px;
+    border-radius:10px;
+    font-family: 'Lilita One', cursive;
+    font-size:15px;
+    color: white;
+    border:none;
+    transition: filter 0.5s ease-in-out;
+}
+
+.submitCreate:hover{
+    cursor: pointer;
+    background-color: #616060;
+    transform: scale(1.06);
+
+
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-size: 50px;
+    margin-left: 50px;
+    padding-top:6px;
+    padding-bottom:6px;
+   display: flex;
+   margin-top: 60px;
+    
+    transition: box-shadow .3s;
+    color: #757575;
+
+}
+
+.material-symbols-outlined2 {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-size: 50px;
+    margin-left: -45px;
+    padding-top:6px;
+    padding-bottom:6px;
+   display: flex;
+   margin-top: -125px;
+    transition: box-shadow .3s;
+    color: #757575;
+
+    
+}
+
+.homeNavLink{
+    text-decoration: none;
+}
+
+.allTemps{
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 3px;
+    padding-top: -10px;
+    margin-right: -10px;
+    font-family: 'Lilita One', cursive;
+}
+
+.listedTemp{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lilita One', cursive;
+    color: #616060;
+}
+
+.temp {
+    display: inline-block;
+    margin-right: 5px;
+    font-family: 'Lilita One', cursive;
+    color: #616060;
+  }
+  
+  .xButton {
+    display: inline-block;
+    border: 1px solid #616060;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow:0 1.5px 1.5px rgba(0, 0, 0, 0.3);
+     font-family: 'Lilita One', cursive;
+     color: #616060;
+  }
+
+  .xButton:hover{
+    cursor: pointer;
+    background-color: #8075FF;
+ 
+   
+  }
+

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap');
+.paginado{
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+.paginado li {
+    display: flex;
+    
+    text-align: center;
+    align-content: center;
+    padding-inline: 5px;
+    margin-left: 2px;
+    border: none;
+    margin-top:50px;
+    margin-bottom: 40px;
+
+}
+
+.paginado li button {
+
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: #CAD5CA;
+    border: transparent;
+    font-family: 'Lilita One', cursive;
+    font-size:15px;
+    color: #5c5a5a;
+    
+    
+}
+
+.paginado li button:hover{
+    background-color: #a1c3a1;
+    color: #757575;
+    cursor: pointer;
+    transform: scale(1.1);
+   
+  }
+
+.paginado li button:active{
+    background-color: #8075FF;
+    filter: saturate(70%);
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+   
+}
+
+

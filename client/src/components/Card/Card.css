@@ -1,0 +1,50 @@
+
+
+/* .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s ease 0s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+    padding: 4em;
+    margin: 5em;
+    display: grid;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 2em;
+    width: 20em;
+    height: 25em;
+    background-color: #CAD5CA
+  } */
+.dogPhoto{
+    width: 400px;
+     height: 250px;
+     border-radius: 50px
+}
+
+.dogPhoto:hover{
+
+  box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.3);
+  transform: scale(1.06);
+  cursor: pointer;
+
+}
+
+.height, .weight, .life_span{
+  text-decoration: none;
+  color: #616060
+}
+
+.info{
+  text-decoration: none;
+  color: #6320EE;
+  font-size:35px;
+}
+
+.card{
+  text-decoration: none;
+  
+}
