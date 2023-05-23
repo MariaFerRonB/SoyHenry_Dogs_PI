@@ -2,7 +2,7 @@ import React from 'react';
 import "./Card.css"
 
 
-export default function Card ({key, name,image,heightMin,heightMax, weightMax, weightMin, life_span}){
+export default function Card ({key, name,image,heightMin,heightMax, weightMax, weightMin, life_span}){ //destructuring of the data needed
     return (
     
        <div className='card' >

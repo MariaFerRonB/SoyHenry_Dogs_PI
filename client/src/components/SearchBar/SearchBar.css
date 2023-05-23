@@ -2,22 +2,22 @@
 .searchingArea{
     
 
-width: 750px;
-margin-left:700px;
-margin-top: -110px;
+width: 60%;
+margin-left:20%;
+margin-top: -5.5%;
 }
 
 .searchBar{
     height:40px;
     font-size:15pt;
-    width:700px;
-    margin-right:10px;
-    margin-left: 50px;
-    margin-top:35px;
+    width:50%;
+    margin-right:3%;
+    margin-left: 3%;
+    margin-top:3%;
     border-radius: 20px;
     border:none;
     font-family: 'Lilita One', cursive;
-    padding-left: 60px;
+    padding-left: 3%;
     color: #616060;
   
 }
@@ -29,13 +29,12 @@ margin-top: -110px;
     .material-icons-outlined {
         font-family: 'Material Symbols Outlined', sans-serif;
         font-size: 30px;
-        margin-left: 70px;
-        margin-bottom: 30px;
-        margin-top: -45px;
-        padding-top:6px;
-        padding-bottom:6px;
+        margin-left: 24%;
+        margin-bottom: 2%;
+        margin-top: -3.3%;
+        padding-top:.4%;
+        padding-bottom:.4%;
         display: flex;
-        margin-right: 60px;
         transition: box-shadow .3s;
         color: #757575;
        

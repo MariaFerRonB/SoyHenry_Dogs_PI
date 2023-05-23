@@ -11,9 +11,9 @@ const updateDog = async (req,res) => {
                 const dogID = await Dog.findByPk(id);
                 if(!dogID) return res.status(404).json({error: "There is no dog associated to the ID provided"})
                 else{
-                    const updatedDog = await dogID.update({
+                    const updatedDog = await dogID.update({ // if no new information is provided then the dogs keeps its exisiting information 
                         name: name || dogID.name,
-                        heightMin: heightMin || dogID.heightMin,
+                        heightMin: heightMin || dogID.heightMin, 
                         heightMax: heightMax || dogID.heightMax,
                         weightMin : weightMin || dogID.weightMin,
                         weightMax : weightMax || dogID.weightMax,

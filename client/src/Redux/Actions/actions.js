@@ -3,8 +3,8 @@ import { GET_DOGS, FILTER_BY_CREATED, FILTER_BY_TEMPERAMENT, ORDER_BY_NAME, GET_
 const endpoint ="http://localhost:3001/dogs"
 
 export function getDogs(){
-    return async function(dispatch){   //aca en donde se conecta el front con el back
-        let response = await axios.get(endpoint);
+    return async function(dispatch){  
+        let response = await axios.get(endpoint); // exactly where back end and front end connect
         return dispatch({
             type: GET_DOGS,
             payload: response.data
@@ -14,7 +14,7 @@ export function getDogs(){
 
 export function getTemperaments(){
     return async function(dispatch){
-        let response = await axios.get("http://localhost:3001/temperaments",{});
+        let response = await axios.get("http://localhost:3001/temperaments" ,{}); //We bring our temperaments from the back end
         return dispatch({
             type:GET_TEMPERAMENTS,
             payload: response.data
@@ -22,7 +22,7 @@ export function getTemperaments(){
     }
 }
 
-export function postDog(payload){
+export function postDog(payload){ //payload represents the data we want to send in the POST request
     return async function(dispatch) {
         let response = await axios.post(endpoint, payload)
         return response
@@ -62,7 +62,7 @@ export function getNameDogs(payload){
 
     return async function (dispatch) {
         try{
-            let response = await axios.get(`${endpoint}?name=${payload}`);
+            let response = await axios.get(`${endpoint}?name=${payload}`); // name is provided by query
             return dispatch ({
                 type: GET_NAME_DOGS,
                 payload: response.data

@@ -11,6 +11,8 @@ module.exports = (sequelize) => {
       allowNull: false      
     },
 
+    //UUID is used because API data already has a ID so to avoid our DB data to be replaced the UUID will generate a hexadecimal ID.
+
     name: {
       type: DataTypes.STRING,
       allowNull: false,

@@ -9,12 +9,12 @@ import paw from "../Home/images/paw.png"
 
 export default function DogCreate(){
 
-const dispatch = useDispatch();
+const dispatch = useDispatch(); //to dispatch actiosn to reducer
 const navigate =useNavigate()
-const allTemperaments = useSelector((state => state.temperaments))
-const existingDogs= useSelector(state => state.dogs)
+const allTemperaments = useSelector((state => state.temperaments)) //brinds temperaments info from store
+const existingDogs= useSelector(state => state.dogs)// brings dogs state from store
 
-const[input, setInput] =useState({
+const[input, setInput] =useState({ //our state startes with no values
     name:"",
     image:"",
     life_span:"",
@@ -25,24 +25,24 @@ const[input, setInput] =useState({
     temperaments:[]
 })
 
-const[errors, setErrors] = useState({})
+const[errors, setErrors] = useState({}) //error state starts as an empty object
 
 
 
 useEffect(() => {
-    dispatch(getTemperaments());
+    dispatch(getTemperaments()); // we dispctah the action to the reducer.
 },[dispatch]);
 
 function handleChange(event) {
 
     setInput({
         ...input,
-        [event.target.name]: event.target.value,
+        [event.target.name]: event.target.value, // event.target.name will represent the input where the user is wrtting & the event.target.value is what they are writting.
     });
  
     setErrors(validate({
         ...input,
-        [event.target.name]: event.target.value,
+        [event.target.name]: event.target.value, // same here
     }));
 
 }
@@ -50,7 +50,7 @@ function handleChange(event) {
 const handleSelect =(event) => {
    setInput({
     ...input,
-    temperaments:[...input.temperaments, event.target.value]
+    temperaments:[...input.temperaments, event.target.value] // a copy of the current temperaments, and the new temperament selected. 
 });
 setErrors(validate({
     ...input,
@@ -62,7 +62,7 @@ const handleDelete = (temp) =>{
     
     setInput({
         ...input,
-        temperaments: input.temperaments.filter(temps => temps !== temp)
+        temperaments: input.temperaments.filter(temps => temps !== temp) // filter by all the temperaments that are different from the temperament deleted.
     })
 }
 
@@ -70,11 +70,11 @@ function handleSubmit(event) {
     event.preventDefault();
     const isDogExists = existingDogs.some((dog) => dog.name === input.name);
     if (isDogExists) {
-        alert("This dog breed already exists.");
+        alert("This dog breed already exists."); // this is what will help us prevent duplicates. 
         return;
       }
     if (!Object.getOwnPropertyNames(errors).length && input.name && input.heightMin && input.heightMax && input.weightMin && input.weightMax && input.life_span && input.temperaments.length) {
-        dispatch(postDog(input));
+        dispatch(postDog(input));  //if there are no errors and all the information is provided then we'll get an alert with the dog created confirmation. 
         alert('Doggie created');
         setInput({
             name: '',
@@ -102,12 +102,11 @@ return (
         <NavLink className="homeNavLink" to="/home">
             
             <span class="material-symbols-outlined">home</span>
+           
             <span class="material-symbols-outlined2">
-            <span class="material-symbols-outlined">
 arrow_back
 </span>
 
-</span>
 
         </NavLink>
         <h1 className="createTitle">ADD A DOG BREED</h1>
@@ -168,11 +167,11 @@ arrow_back
                 <label>Temperaments</label>
                 <select className="temperamentOption" onChange ={handleSelect}>
                     <option value="allTemps" hidden>Choose all that apply...</option>
-                    {allTemperaments?.sort((a,b) =>{
+                    {allTemperaments?.sort((a,b) =>{ // we brought all the temperaments from the state, so if the temperaments are found then we´ll sort them 
                         if(a.name> b.name) return 1
                         if(a.name < b.name) return -1
                         return 0
-                    }).map(temp => {
+                    }).map(temp => { //and for each one we'll get the name and the id. 
                         return (
                             <option value ={temp.name} key={temp.id}>{temp.name}</option>
                         )
@@ -182,7 +181,7 @@ arrow_back
                         <p className='error'><strong>{errors.temperaments}</strong></p>
                     )}
 
-                <ul className="listedTemp"><li>{input.temperaments.map(temp => temp + ", ")}</li></ul>
+                <ul className="listedTemp"><li>{input.temperaments.map(temp => temp + ", ")}</li></ul> {/* for each we'll bring the name and separate them with a comma. */} 
                 </div>
 
                 <button className="submitCreate" type="submit">Create</button>
@@ -195,7 +194,7 @@ arrow_back
                <ul className='allTemps' key={temp}>
                                     <li >
                                         <p className='temp'><strong>{temp}</strong></p>
-                                        <button className="xButton" onClick={() => handleDelete(temp)}  >X</button>
+                                        <button className="xButton" onClick={() => handleDelete(temp)}  >X</button> {/*delete button, just in case we accidently select a undesired temperament.  */} 
                                     </li>
                                 </ul>
          

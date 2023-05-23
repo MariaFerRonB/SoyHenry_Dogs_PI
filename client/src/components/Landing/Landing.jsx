@@ -15,7 +15,7 @@ export default function Landing () {
             <h1 className="welcoming">Welcome to the best Dog Search App!</h1>
             <NavLink to="/home">
             <button className="enterButton" type="button">Start the search!</button>
-            </NavLink>
+            </NavLink>   {/* link that will take us to ../home */}
             </div>
             <img className = "perrito" src ={myImage}></img>
          

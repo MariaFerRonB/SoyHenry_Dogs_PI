@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Roboto:wght@700;900&display=swap');
 
 .welcomeMessage{
-    margin-top: 300px;
-    margin-right: 500px;
-    margin-left: 550px;
+    margin-top: 13%;
+    margin-right: 10%;
+    margin-left: 24%;
     color: #616060;
     width:450px
 }
@@ -21,13 +21,13 @@ font-family: 'Lilita One', cursive;
     height: 60px;
     width: 300px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 110%;
     background-color: #8075FF;
     border:none;
     transition: all 0.3s ease-in-out;
     color:white;
     text-shadow: 1px 1px 1px black;
-    margin-left:-10px
+    margin-left:-4%
 }
 
 .enterButton:hover{
@@ -36,8 +36,8 @@ font-family: 'Lilita One', cursive;
 
 .perrito{
     width:650px;
-    margin-top: -520px;
-    margin-left: 750px;
+    margin-top: -24.5%;
+    margin-left: 25%;
     border-radius:400px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
  

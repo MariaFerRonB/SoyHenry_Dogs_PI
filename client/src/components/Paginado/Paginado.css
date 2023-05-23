@@ -2,18 +2,18 @@
 .paginado{
     display: flex;
     justify-content: center;
-    margin-top: -100px;
+    margin-top: -3%;
 }
 .paginado li {
     display: flex;
     
     text-align: center;
     align-content: center;
-    padding-inline: 5px;
-    margin-left: 2px;
+    padding-inline: .2%;
+    margin-left: .3%;
     border: none;
-    margin-top:50px;
-    margin-bottom: 40px;
+    margin-top:1.1%;
+    margin-bottom: 1.5%;
 
 }
 

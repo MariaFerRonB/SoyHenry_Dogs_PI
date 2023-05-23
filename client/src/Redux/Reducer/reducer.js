@@ -1,4 +1,5 @@
 import { GET_DOGS, FILTER_BY_CREATED, FILTER_BY_TEMPERAMENT, ORDER_BY_NAME, GET_NAME_DOGS, GET_TEMPERAMENTS, POST_DOG, FILTER_BY_WEIGHT, GET_DOG_DETAIL } from "../Actions/action-types";
+// functions to handle state updates
 
 const initialState = {
     dogs: [],
@@ -7,12 +8,12 @@ const initialState = {
 	detail: {},
 };
 
-function reducer(state = initialState, action) {
+function reducer(state = initialState, action) { //current state and input(action to be taken to modify the state)
 	switch (action.type) {
 		case GET_DOGS:
 			return {
-				...state,
-                dogs:action.payload,
+				...state, // a copy of the current state
+                dogs:action.payload, //updating the corresponding variables. 
 				dogsFiltered: action.payload,
                
 			};
@@ -29,6 +30,7 @@ function reducer(state = initialState, action) {
                     ...state,
                     temperaments:action.payload
                 }
+
         case POST_DOG:
             return {
                 ...state
